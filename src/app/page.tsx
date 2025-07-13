@@ -7,9 +7,9 @@ export default function Home() {
       <section className="py-20 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <img
-            src="/profile-placeholder.png"
+            src="/profile_photo.jpg"
             alt="Profile"
-            className="w-36 h-36 rounded-full border-4 border-sky-500 shadow-lg mb-6 object-cover mx-auto"
+            className="w-36 h-36 rounded-full border-4 border-sky-500 shadow-lg mb-6 object-cover mx-auto object-top"
           />
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 text-center mb-4">
             Hey, I&#39;m <span className="text-sky-500">Zachary Yeo</span>
@@ -37,16 +37,43 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Technical Skills Section (bg-white) */}
+      {/* Technical Skills Section (Technical Expertise, grouped) */}
       <section className="py-20 px-4 bg-cyan-100">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-900">Technical Skills</h2>
-          <div className="flex flex-wrap justify-center gap-6">
-            {['React', 'Next.js', 'TypeScript', 'Node.js', 'Tailwind CSS', 'Python'].map(skill => (
-              <span key={skill} className="bg-white px-6 py-3 rounded-xl shadow text-lg font-medium text-gray-800 border border-sky-100 border-l-4 border-sky-500 hover:bg-blue-100 transition">
-                {skill}
-              </span>
-            ))}
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-900">Technical Expertise</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-white rounded-xl p-6 border-l-4 border-sky-500 shadow">
+              <h3 className="font-semibold text-lg mb-2">Backend Development</h3>
+              <p className="text-gray-700">Python, FastAPI, Node.js, C/C++, Java</p>
+            </div>
+            <div className="bg-white rounded-xl p-6 border-l-4 border-sky-500 shadow">
+              <h3 className="font-semibold text-lg mb-2">Frontend Development & UI/UX</h3>
+              <p className="text-gray-700">React, UI/UX Principles</p>
+            </div>
+            <div className="bg-white rounded-xl p-6 border-l-4 border-sky-500 shadow">
+              <h3 className="font-semibold text-lg mb-2">Cloud & Deployment</h3>
+              <p className="text-gray-700">AWS, Azure, Docker, Kubernetes, Linux</p>
+            </div>
+            <div className="bg-white rounded-xl p-6 border-l-4 border-sky-500 shadow">
+              <h3 className="font-semibold text-lg mb-2">Database Management</h3>
+              <p className="text-gray-700">PostgreSQL, SQL, Milvus</p>
+            </div>
+            <div className="bg-white rounded-xl p-6 border-l-4 border-sky-500 shadow">
+              <h3 className="font-semibold text-lg mb-2">DevOps & Workflow</h3>
+              <p className="text-gray-700">GitHub, CI/CD, Jenkins, Prefect</p>
+            </div>
+            <div className="bg-white rounded-xl p-6 border-l-4 border-sky-500 shadow">
+              <h3 className="font-semibold text-lg mb-2">Observability & Search</h3>
+              <p className="text-gray-700">Datadog, Kibana, Elasticsearch</p>
+            </div>
+            <div className="bg-white rounded-xl p-6 border-l-4 border-sky-500 shadow">
+              <h3 className="font-semibold text-lg mb-2">Project Management</h3>
+              <p className="text-gray-700">JIRA, Confluence, Agile/Scrum</p>
+            </div>
+            <div className="bg-white rounded-xl p-6 border-l-4 border-sky-500 shadow">
+              <h3 className="font-semibold text-lg mb-2">Other</h3>
+              <p className="text-gray-700">Machine Learning, NLP, System Architecture, Network Protocols</p>
+            </div>
           </div>
         </div>
       </section>
@@ -56,13 +83,25 @@ export default function Home() {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-900">Featured Projects</h2>
           <div className="grid md:grid-cols-2 gap-10">
-            {[1,2].map(i => (
-              <div key={i} className="p-8 flex flex-col">
-                <h3 className="text-xl font-semibold mb-2 text-gray-900">Project {i}</h3>
-                <p className="text-gray-600 mb-4">A short description of the project goes here. Highlight what makes it interesting or unique.</p>
-                <a href="#" className="mt-auto inline-block px-5 py-2 bg-sky-400 text-white rounded-md font-medium hover:bg-sky-500 transition text-center">Learn more</a>
-              </div>
-            ))}
+            {/* Project 1 */}
+            <div className="p-8 flex flex-col bg-white rounded-xl shadow">
+              <h3 className="text-xl font-semibold mb-2 text-gray-900">Kaggle March Madness 2024</h3>
+              <p className="text-gray-600 mb-4">Analyzed how different metrics affect the accuracy of an XGBoost model in predicting the outcome of the NCAA March Madness tournament. </p>
+              <a href="#" className="mt-auto inline-block px-5 py-2 bg-sky-400 text-white rounded-md font-medium hover:bg-sky-500 transition text-center">Learn more</a>
+            </div>
+            {/* Project 2 */}
+            <div className="p-8 flex flex-col bg-white rounded-xl shadow">
+              <h3 className="text-xl font-semibold mb-2 text-gray-900">Understanding Cilium</h3>
+              <p className="text-gray-600 mb-4">A study of how Cilium works and how it can be used to manage network traffic more efficiently compared to traditional network solutions like iptables.</p>
+              <a
+                href="/Final_Project_Report_Cilium.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-auto inline-block px-5 py-2 bg-sky-400 text-white rounded-md font-medium hover:bg-sky-500 transition text-center"
+              >
+                Learn more
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -70,17 +109,22 @@ export default function Home() {
       {/* Job Experiences Section (default) */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-900">Job Experiences</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-900">Professional Experience</h2>
           <div className="space-y-10">
             <div className="p-6 text-left">
-              <h3 className="text-xl font-semibold text-gray-900">Software Engineer @ Company A</h3>
-              <span className="text-gray-500 text-sm">2022 - Present</span>
-              <p className="text-gray-700 mt-2">Worked on building scalable web applications and leading a small team of developers.</p>
+              <h3 className="text-xl font-semibold text-gray-900">AI Tutor @ xAI</h3>
+              <span className="text-gray-500 text-sm">August 2024 - June 2025</span>
+              <p className="text-gray-700 mt-2">Labeled multimodal data to support LLM fine-tuning and evaluation.</p>
             </div>
             <div className="p-6 text-left">
-              <h3 className="text-xl font-semibold text-gray-900">Frontend Developer @ Company B</h3>
-              <span className="text-gray-500 text-sm">2020 - 2022</span>
-              <p className="text-gray-700 mt-2">Focused on creating beautiful and responsive user interfaces with React and Tailwind CSS.</p>
+              <h3 className="text-xl font-semibold text-gray-900">Software Engineer Intern @ SPAN.io</h3>
+              <span className="text-gray-500 text-sm">May 2023 - July 2023</span>
+              <p className="text-gray-700 mt-2">Created automated data pipelines using Prefect flows and visualized data on Datadog dashboards. </p>
+            </div>
+            <div className="p-6 text-left">
+              <h3 className="text-xl font-semibold text-gray-900">Software Engineer Intern @ Trend Micro</h3>
+              <span className="text-gray-500 text-sm">June 2021 - August 2021</span>
+              <p className="text-gray-700 mt-2">Developed an automated network health monitoring tool that alerts microservices using ELK Stack and Slack API. </p>
             </div>
           </div>
         </div>
