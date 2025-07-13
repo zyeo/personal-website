@@ -23,16 +23,10 @@ function Navbar() {
     <nav className="fixed top-0 left-0 w-full z-50 bg-white border-b border-gray-200 shadow-sm">
       <ul className="flex gap-8 text-lg font-medium justify-center py-4">
         <li>
-          <Link href="/" className="hover:text-blue-600 transition">Home</Link>
+          <Link href="/" className="hover:text-sky-500 transition">Home</Link>
         </li>
         <li>
-          <Link href="/about" className="hover:text-blue-600 transition">About</Link>
-        </li>
-        <li>
-          <Link href="/projects" className="hover:text-blue-600 transition">Projects</Link>
-        </li>
-        <li>
-          <Link href="/photos" className="hover:text-blue-600 transition">Photos</Link>
+          <Link href="/photos" className="hover:text-sky-500 transition">Photos</Link>
         </li>
       </ul>
     </nav>

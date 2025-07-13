@@ -31,8 +31,8 @@ export default function Home() {
       <section className="py-20 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">About Me</h2>
-          <p className="text-gray-700 text-lg leading-relaxed">
-            Driven by curiosity and a love for building things, I enjoy creating intuitive and performant user experiences. My journey spans various fields, from developing web applications to managing projects and fostering collaboration. I believe in building not just robust applications, but also strong relationships and empowering others through teaching and mentorship.
+          <p className="text-gray-700 text-lg leading-relaxed text-left">
+              I’m a software engineer passionate about building clean, scalable systems and bringing ideas to life through code. From backend infrastructure to intuitive frontend interfaces, I enjoy tackling complex problems and working with great teams. I’m always learning something new and eagerly looking for the next challenge.
           </p>
         </div>
       </section>
@@ -81,7 +81,7 @@ export default function Home() {
       {/* Featured Projects Section (default) */}
       <section className="py-20 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-900">Featured Projects</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-900">Personal Projects</h2>
           <div className="grid md:grid-cols-2 gap-10">
             {/* Project 1 */}
             <div className="p-8 flex flex-col bg-white rounded-xl shadow">
@@ -91,7 +91,7 @@ export default function Home() {
             </div>
             {/* Project 2 */}
             <div className="p-8 flex flex-col bg-white rounded-xl shadow">
-              <h3 className="text-xl font-semibold mb-2 text-gray-900">Understanding Cilium</h3>
+              <h3 className="text-xl font-semibold mb-2 text-gray-900">Deep Dive into Cilium</h3>
               <p className="text-gray-600 mb-4">A study of how Cilium works and how it can be used to manage network traffic more efficiently compared to traditional network solutions like iptables.</p>
               <a
                 href="/Final_Project_Report_Cilium.pdf"
@@ -107,24 +107,24 @@ export default function Home() {
       </section>
 
       {/* Job Experiences Section (default) */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 bg-cyan-100">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-900">Professional Experience</h2>
           <div className="space-y-10">
-            <div className="p-6 text-left">
+            <div className="p-6 bg-white rounded-xl border-l-4 border-sky-500 shadow text-left">
               <h3 className="text-xl font-semibold text-gray-900">AI Tutor @ xAI</h3>
               <span className="text-gray-500 text-sm">August 2024 - June 2025</span>
               <p className="text-gray-700 mt-2">Labeled multimodal data to support LLM fine-tuning and evaluation.</p>
             </div>
-            <div className="p-6 text-left">
+            <div className="p-6 bg-white rounded-xl border-l-4 border-sky-500 shadow text-left">
               <h3 className="text-xl font-semibold text-gray-900">Software Engineer Intern @ SPAN.io</h3>
               <span className="text-gray-500 text-sm">May 2023 - July 2023</span>
               <p className="text-gray-700 mt-2">Created automated data pipelines using Prefect flows and visualized data on Datadog dashboards. </p>
             </div>
-            <div className="p-6 text-left">
+            <div className="p-6 bg-white rounded-xl border-l-4 border-sky-500 shadow text-left">
               <h3 className="text-xl font-semibold text-gray-900">Software Engineer Intern @ Trend Micro</h3>
               <span className="text-gray-500 text-sm">June 2021 - August 2021</span>
-              <p className="text-gray-700 mt-2">Developed an automated network health monitoring tool that alerts microservices using ELK Stack and Slack API. </p>
+              <p className="text-gray-700 mt-2">Developed an automated network health monitorintg tool that alerts teams using ELK Stack and Slack API. </p>
             </div>
           </div>
         </div>
