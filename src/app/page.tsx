@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       {/* Hero/Intro Section (default) */}
-      <section className="py-20 px-4">
+      <section className="pt-10 pb-10 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <img
             src="/profile_photo.jpg"
@@ -28,11 +28,11 @@ export default function Home() {
       </section>
 
       {/* About Me Section (default) */}
-      <section className="py-20 px-4">
+      <section className="pt-10 pb-20 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">About Me</h2>
           <p className="text-gray-700 text-lg leading-relaxed text-left">
-              I&#39;m a software engineer passionate about building clean, scalable systems and bringing ideas to life through code. From backend infrastructure to intuitive frontend interfaces, I enjoy tackling complex problems and working with great teams. I&#39;m always learning something new and eagerly looking for the next challenge.
+              I&#39;m a software engineer passionate about building clean, scalable systems and bringing ideas to life through code. From backend infrastructure to intuitive frontend designs, I enjoy tackling complex problems and working alongside talented and driven teammates. I&#39;m always learning something new and looking for a good challenge.
           </p>
         </div>
       </section>
@@ -131,7 +131,7 @@ export default function Home() {
       </section>
 
       {/* Get in Touch Section (default) */}
-      <section className="py-20 px-4">
+      <section className="pt-20 pb-5 px-4">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Get in Touch</h2>
           <p className="text-gray-700 mb-8 text-lg">Interested in working together or just want to say hi? Reach out below!</p>
