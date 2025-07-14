@@ -1,0 +1,92 @@
+[
+  {
+    "src": "/photo_gallery/austin_lightning.JPG",
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAL0lEQVR4nGMwMdCqLMsLDg7hYBNiCPD3SU6I//v+//FtrxgcrfWtTDS1VAxtzHwB+zAM5fXLBLMAAAAASUVORK5CYII=",
+    "width": 6240,
+    "height": 4160
+  },
+  {
+    "src": "/photo_gallery/bishop.jpg",
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAIAAADwyuo0AAAACXBIWXMAAA9hAAAPYQGoP6dpAAAAI0lEQVR4nGNYdfD9w5//l+1+ya/lwSClaR0QnW/jHsnAJQ8AtpcKnBK0nQcAAAAASUVORK5CYII=",
+    "width": 6240,
+    "height": 3464
+  },
+  {
+    "src": "/photo_gallery/campfire.jpg",
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMUlEQVR4nGO4emv/r3+v9+1fwaBuIOvjoc7AwcDAzskwK19DQ0WIgZOdQUKCj52TAQBAJwqruSB0wwAAAABJRU5ErkJggg==",
+    "width": 4160,
+    "height": 6240
+  },
+  {
+    "src": "/photo_gallery/cat.jpg",
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAP0lEQVR4nAE0AMv/ALOvu//4///79icOAADSx8XRvrufg2kxIg4AfWlXSDUnLBsKWE9OADcoIzcpKREAACUeG6o6E274oC5LAAAAAElFTkSuQmCC",
+    "width": 2015,
+    "height": 2015
+  },
+  {
+    "src": "/photo_gallery/dark_rock.jpg",
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAD2EAAA9hAHVrK90AAAALklEQVR4nGOwAQN5eXmG379/r169+tixYwyrV69ubW1dunQpg5aWloGBASsrKwBQMQ+mzw4mbQAAAABJRU5ErkJggg==",
+    "width": 2000,
+    "height": 3000
+  },
+  {
+    "src": "/photo_gallery/glare_cat copy.jpg",
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMUlEQVR4nGNgZGI0E5bOik5iOH707Lm+2f8//me4c/dpbnDsxV3HGKJiYpxcXY2MjAFQcRFQGOrh1QAAAABJRU5ErkJggg==",
+    "width": 4160,
+    "height": 6238
+  },
+  {
+    "src": "/photo_gallery/golden_gate.JPG",
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMElEQVR4nGPIyC3Lysjy9Am1tXVi2L155f8f57YvnBgW6M0gJykc4WaoLCnMyc4MADPADWA7f4gsAAAAAElFTkSuQmCC",
+    "width": 6240,
+    "height": 4160
+  },
+  {
+    "src": "/photo_gallery/half_dome.jpg",
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMUlEQVR4nGN4++vRhx/3v/1/xjBlcU95e0nX7DYGeTlGawc1WQ1pBlZWBklxBjEpZgC1XA74E2tvIAAAAABJRU5ErkJggg==",
+    "width": 4120,
+    "height": 6181
+  },
+  {
+    "src": "/photo_gallery/hd_cables.jpg",
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAM0lEQVR4nAEoANf/AHqjm3KOgFaIiQDh27GVjWhGW1EA//zNlJRzBAcAAP//19LOqGxsU5HaFD8bypMZAAAAAElFTkSuQmCC",
+    "width": 4160,
+    "height": 6240
+  },
+  {
+    "src": "/photo_gallery/hd_sit.jpg",
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMUlEQVR4nGO4/f/vkuvnO/dtYyipio4vi8+dVM/g6KShbCpnH+rMUFYeycDNIKEhDgCGoQ66gdVJNgAAAABJRU5ErkJggg==",
+    "width": 4160,
+    "height": 6240
+  },
+  {
+    "src": "/photo_gallery/sf_art.jpg",
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAD2EAAA9hAHVrK90AAAAMUlEQVR4nGMQFhJhZOYVERFjMNJVeXR6qoerJYOvjcb/7ztSAqwZrHRl/l2aE+qiDwC9rQwZnDVo2gAAAABJRU5ErkJggg==",
+    "width": 2098,
+    "height": 3000
+  },
+  {
+    "src": "/photo_gallery/sf_church.jpg",
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAD2EAAA9hAHVrK90AAAAM0lEQVR4nAEoANf/ANvS+/Lh+//7/gCUlb3Gsszjy9sAOTc0MjEqNjErAC0mGhMUCQADAOrKEYWPQxrPAAAAAElFTkSuQmCC",
+    "width": 4004,
+    "height": 5684
+  },
+  {
+    "src": "/photo_gallery/vogelsang_peak.jpg",
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMklEQVR4nAEnANj/AP/dxP/23P/23f/x1wC0i3Oshm2adVqFYUkAQCQOJgAALBAAelpE5/gS4Iua7Q0AAAAASUVORK5CYII=",
+    "width": 6163,
+    "height": 4109
+  },
+  {
+    "src": "/photo_gallery/yosemite_falls.jpg",
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMElEQVR4nGNISrR3dNKwsZJjKMxyqSwJKM91ZbAzEV2+uN7ZVoEhI9bu//+bPJwMAOwgDKaSX4HMAAAAAElFTkSuQmCC",
+    "width": 4160,
+    "height": 6240
+  },
+  {
+    "src": "/photo_gallery/zach_climb.jpg",
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAMklEQVR4nAEnANj/ALu0sU1GQvbr5H55eQDt0crClXiylHFGQDoAR0RI//fmNiofCAQEmbkSN5erUJ8AAAAASUVORK5CYII=",
+    "width": 6240,
+    "height": 4160
+  }
+]

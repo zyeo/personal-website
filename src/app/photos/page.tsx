@@ -2,25 +2,7 @@
 import { useState, useEffect } from "react";
 import Masonry from "react-masonry-css";
 import Image from "next/image";
-
-const images = [
-  "/photo_gallery/bishop.jpg",
-  "/photo_gallery/sf_church.jpg",
-  "/photo_gallery/vogelsang_peak.jpg",
-  "/photo_gallery/yosemite_falls.jpg",
-  "/photo_gallery/dark_rock.jpg",
-  "/photo_gallery/campfire.jpg",
-  "/photo_gallery/half_dome.jpg",
-  "/photo_gallery/hd_sit.jpg",
-  "/photo_gallery/hd_cables.jpg",
-  "/photo_gallery/cat.jpg",
-  "/photo_gallery/golden_gate.JPG",
-  "/photo_gallery/austin_lightning.JPG",
-  "/photo_gallery/zach_climb.jpg",
-  "/photo_gallery/glare_cat copy.jpg",
-  "/photo_gallery/sf_art.jpg",
-  // Add more image filenames as needed
-];
+import blurDataURLs from "../../../blurDataURLs.json";
 
 // Masonry breakpoints
 const breakpointColumnsObj = {
@@ -38,9 +20,9 @@ export default function Photos() {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") setSelected(null);
       if (e.key === "ArrowLeft")
-        setSelected((prev) => (prev !== null ? (prev - 1 + images.length) % images.length : null));
+        setSelected((prev) => (prev !== null ? (prev - 1 + blurDataURLs.length) % blurDataURLs.length : null));
       if (e.key === "ArrowRight")
-        setSelected((prev) => (prev !== null ? (prev + 1) % images.length : null));
+        setSelected((prev) => (prev !== null ? (prev + 1) % blurDataURLs.length : null));
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
@@ -54,13 +36,15 @@ export default function Photos() {
         className="flex w-auto -ml-4"
         columnClassName="pl-4"
       >
-        {images.map((src, idx) => (
+        {blurDataURLs.map((img, idx) => (
           <div key={idx} className="mb-4 w-full shadow hover:scale-105 transition-transform cursor-pointer max-w-full" onClick={() => setSelected(idx)}>
             <Image
-              src={src}
+              src={img.src}
               alt={`Gallery photo ${idx + 1}`}
-              width={800}
-              height={600}
+              width={img.width}
+              height={img.height}
+              placeholder="blur"
+              blurDataURL={img.blurDataURL}
               style={{ width: "100%", height: "auto", objectFit: "cover" }}
               loading="lazy"
             />
@@ -84,7 +68,7 @@ export default function Photos() {
               style={{ zIndex: 10 }}
               onClick={e => {
                 e.stopPropagation();
-                setSelected((selected - 1 + images.length) % images.length);
+                setSelected((selected - 1 + blurDataURLs.length) % blurDataURLs.length);
               }}
               aria-label="Previous"
             >
@@ -92,10 +76,12 @@ export default function Photos() {
             </button>
             {/* Image */}
             <Image
-              src={images[selected]}
+              src={blurDataURLs[selected].src}
               alt="Full size"
-              width={1200}
-              height={900}
+              width={blurDataURLs[selected].width}
+              height={blurDataURLs[selected].height}
+              placeholder="blur"
+              blurDataURL={blurDataURLs[selected].blurDataURL}
               className="max-h-[80vh] max-w-[90vw] shadow-lg"
               style={{ display: "block", width: "auto", height: "80vh", maxWidth: "90vw", objectFit: "contain" }}
             />
@@ -104,7 +90,7 @@ export default function Photos() {
               className="mt-4 px-3 py-1 rounded bg-white/70 text-base font-semibold text-gray-900 shadow"
               style={{ zIndex: 20 }}
             >
-              {selected + 1} of {images.length}
+              {selected + 1} of {blurDataURLs.length}
             </div>
             {/* Right Arrow */}
             <button
@@ -112,7 +98,7 @@ export default function Photos() {
               style={{ zIndex: 10 }}
               onClick={e => {
                 e.stopPropagation();
-                setSelected((selected + 1) % images.length);
+                setSelected((selected + 1) % blurDataURLs.length);
               }}
               aria-label="Next"
             >
