@@ -32,7 +32,7 @@ export default function Home() {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">About Me</h2>
           <p className="text-gray-700 text-lg leading-relaxed text-left">
-              I'm a software engineer passionate about building clean, scalable systems and bringing ideas to life through code. From backend infrastructure to intuitive frontend interfaces, I enjoy tackling complex problems and working with great teams. I'm always learning something new and eagerly looking for the next challenge.
+              I&#39;m a software engineer passionate about building clean, scalable systems and bringing ideas to life through code. From backend infrastructure to intuitive frontend interfaces, I enjoy tackling complex problems and working with great teams. I&#39;m always learning something new and eagerly looking for the next challenge.
           </p>
         </div>
       </section>
