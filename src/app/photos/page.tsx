@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Masonry from "react-masonry-css";
+import Image from "next/image";
 
 const images = [
   "/photo_gallery/bishop.jpg",
@@ -54,14 +55,16 @@ export default function Photos() {
         columnClassName="pl-4"
       >
         {images.map((src, idx) => (
-          <img
-            key={idx}
-            src={src}
-            alt={`Gallery photo ${idx + 1}`}
-            className="mb-4 w-full shadow hover:scale-105 transition-transform cursor-pointer max-w-full"
-            onClick={() => setSelected(idx)}
-            loading="lazy"
-          />
+          <div key={idx} className="mb-4 w-full shadow hover:scale-105 transition-transform cursor-pointer max-w-full" onClick={() => setSelected(idx)}>
+            <Image
+              src={src}
+              alt={`Gallery photo ${idx + 1}`}
+              width={800}
+              height={600}
+              style={{ width: "100%", height: "auto", objectFit: "cover" }}
+              loading="lazy"
+            />
+          </div>
         ))}
       </Masonry>
 
@@ -88,11 +91,13 @@ export default function Photos() {
               &#8592;
             </button>
             {/* Image */}
-            <img
+            <Image
               src={images[selected]}
               alt="Full size"
+              width={1200}
+              height={900}
               className="max-h-[80vh] max-w-[90vw] shadow-lg"
-              style={{ display: "block" }}
+              style={{ display: "block", width: "auto", height: "80vh", maxWidth: "90vw", objectFit: "contain" }}
             />
             {/* Image Counter (centered below image, inside modal) */}
             <div
