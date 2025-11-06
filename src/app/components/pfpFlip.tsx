@@ -32,7 +32,7 @@ export default function PfpFlip({ className = "" }) {
           }}
         >
           <img
-            src="/profile_photos/pfp3.jpg"
+            src="/profile_photos/pfp4.jpg"
             alt="Front"
             className="w-full h-full object-cover"
           />
