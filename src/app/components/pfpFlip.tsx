@@ -48,7 +48,7 @@ export default function PfpFlip({ className = "" }) {
           }}
         >
           <img
-            src="/profile_photos/benji.jpg"
+            src="/profile_photos/benji2.jpg"
             alt="Back"
             className="w-full h-full object-cover"
           />
