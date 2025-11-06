@@ -29,5 +29,5 @@ const results = await Promise.all(
   })
 );
 
-fs.writeFileSync(outputFile, JSON.stringify(results, null, 2));
+  fs.writeFileSync(outputFile, JSON.stringify(results, null, 2));
 console.log(`Wrote ${results.length} entries to ${outputFile}`);

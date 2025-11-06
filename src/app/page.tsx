@@ -1,30 +1,28 @@
 // import Image from "next/image";
-
+import PfpFlip from "./components/pfpFlip";
 export default function Home() {
+  
   return (
     <>
       {/* Hero/Intro Section (default) */}
-      <section className="pt-10 pb-10 px-4">
-        <div className="max-w-3xl mx-auto text-center">
-          <img
-            src="/profile_photo.jpg"
-            alt="Profile"
-            className="w-36 h-36 rounded-full border-4 border-sky-500 shadow-lg mb-6 object-cover mx-auto object-top"
-          />
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 text-center mb-4">
-            Hey, I&#39;m <span className="text-sky-500">Zachary Yeo</span>
-          </h1>
-          <p className="text-xl text-gray-700 text-center max-w-xl mb-6 mx-auto">
-            Welcome to my portfolio! 👋
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center text-gray-500 text-lg">
-            <span>Software Developer</span>
-            <span className="hidden sm:inline">|</span>
-            <span>Rock Climber</span>
-            <span className="hidden sm:inline">|</span>
-            <span>Photographer</span>
-          </div>
+      <section className="pt-10 pb-10 px-4 text-center flex flex-col items-center scale-[1.25]">
+        <div className="my-8 scale-[1.15]">
+          <PfpFlip />
         </div>
+        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 text-center mb-4">
+          Hey, I&#39;m <span className="text-sky-500">Zachary Yeo</span>
+        </h1>
+        <p className="text-xl text-gray-700 text-center max-w-xl mb-6 mx-auto">
+          Welcome to my portfolio! 👋
+        </p>
+        <div className="flex flex-wrap gap-4 justify-center text-gray-500 text-lg">
+          <span>Software Developer</span>
+          <span className="hidden sm:inline">|</span>
+          <span>Rock Climber</span>
+          <span className="hidden sm:inline">|</span>
+          <span>Photographer</span>
+        </div>
+        
       </section>
 
       {/* About Me Section (default) */}
@@ -128,7 +126,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+  </section>
 
       {/* Get in Touch Section (default) */}
       <section className="pt-20 pb-5 px-4">
