@@ -7,7 +7,7 @@ export default function PfpFlip({ className = "" }) {
 
   return (
     <div
-      className="flex justify-center items-center ${className}"
+      className={`flex justify-center items-center ${className}`}
       style={{ perspective: "1000px" }}
     >
       <div
