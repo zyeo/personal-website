@@ -6,7 +6,7 @@ export default function Home() {
     <>
       {/* Hero/Intro Section (default) */}
       <section className="pt-10 pb-10 px-4 text-center flex flex-col items-center scale-[1.25]">
-        <PfpFlip className="my-8 scale-[1.15]" />
+        <PfpFlip className="my-8 scale-[1.05]" />
         <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 text-center mb-4">
           Hey, I&#39;m <span className="text-sky-500">Zachary Yeo</span>
         </h1>
