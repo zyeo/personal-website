@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+      {
+        "source": "/tokyoindex/:path*",
+        "destination": "https://tokyo-climbing-index.vercel.app/:path*"
+      }
+    ]
+  }
