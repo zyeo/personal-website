@@ -81,9 +81,16 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-10">
             {/* Project 1 */}
             <div className="p-8 flex flex-col bg-white rounded-xl shadow">
-              <h3 className="text-xl font-semibold mb-2 text-gray-900">Kaggle March Madness 2024</h3>
-              <p className="text-gray-600 mb-4">Analyzed how different metrics affect the accuracy of an XGBoost model in predicting the outcome of the NCAA March Madness tournament. </p>
-              <a href="#" className="mt-auto inline-block px-5 py-2 bg-sky-400 text-white rounded-md font-medium hover:bg-sky-500 transition text-center">Learn more</a>
+              <h3 className="text-xl font-semibold mb-2 text-gray-900">Tokyo Climbing Gym Index</h3>
+              <p className="text-gray-600 mb-4">A minimalist database of bouldering gyms in Tokyo</p>
+              <a 
+                href="https://tokyoindex.zachyeo.com" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-auto inline-block px-5 py-2 bg-sky-400 text-white rounded-md font-medium hover:bg-sky-500 transition text-center"
+                >
+                  Visit site
+                </a>
             </div>
             {/* Project 2 */}
             <div className="p-8 flex flex-col bg-white rounded-xl shadow">
