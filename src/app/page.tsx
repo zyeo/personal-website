@@ -16,20 +16,24 @@ export default function Home() {
         <div className="flex flex-wrap gap-4 justify-center text-gray-500 text-lg">
           <span>Software Developer</span>
           <span className="hidden sm:inline">|</span>
-          <span>Rock Climber</span>
-          <span className="hidden sm:inline">|</span>
-          <span>Photographer</span>
+          <span>Building web apps, tools, and automations</span>
         </div>
         
       </section>
 
       {/* About Me Section (default) */}
-      <section className="pt-10 pb-20 px-4">
+      <section className="pt-12 pb-16 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">About Me</h2>
-          <p className="text-gray-700 text-lg leading-relaxed text-left">
-              I&#39;m a software engineer passionate about building clean, scalable systems and bringing ideas to life through code. From backend infrastructure to intuitive frontend designs, I enjoy tackling complex problems and working alongside talented and driven teammates. I&#39;m always learning something new and looking for a good challenge.
-          </p>
+          <div className="max-w-3xl mx-auto text-left">
+            <p className="text-gray-700 text-lg leading-relaxed text-left mb-4">
+              I build web apps, tools, and automations that solve real problems. From frontend interfaces to backend systems, I focus on creating simple, practical products that people actually use.
+            </p>
+
+            <p className="text-gray-700 text-lg leading-relaxed text-left">
+              Recently, I've been working on data tracking tools, browser extensions, and small-scale automation systems.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -94,10 +98,27 @@ export default function Home() {
             </div>
             {/* Project 2 */}
             <div className="p-8 flex flex-col bg-white rounded-xl shadow">
-              <h3 className="text-xl font-semibold mb-2 text-gray-900">Deep Dive into Cilium</h3>
-              <p className="text-gray-600 mb-4">A study of how Cilium works and how it can be used to manage network traffic more efficiently compared to traditional network solutions like iptables.</p>
+              <h3 className="text-xl font-semibold mb-2 text-gray-900">Youtube Time Tracker Chrome Extension</h3>
+              <p className="text-gray-600 mb-4">
+                A lightweight tool for tracking YouTube usage and habits
+              </p>
+              <a 
+                href="https://github.com/zyeo/youtube-tracker-extension" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-auto inline-block px-5 py-2 bg-sky-400 text-white rounded-md font-medium hover:bg-sky-500 transition text-center"
+                >
+                  Learn more
+                </a>
+            </div>
+            {/* Project 3 */}
+            <div className="p-8 flex flex-col bg-white rounded-xl shadow">
+              <h3 className="text-xl font-semibold mb-2 text-gray-900">Smart Kettle Controller</h3>
+              <p className="text-gray-600 mb-4">
+                A simple IoT system for maintaining the perfect brewing temperature
+              </p>
               <a
-                href="/Final_Project_Report_Cilium.pdf"
+                href="https://github.com/zyeo/smart-kettle-controller"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-auto inline-block px-5 py-2 bg-sky-400 text-white rounded-md font-medium hover:bg-sky-500 transition text-center"

@@ -25,9 +25,9 @@ function Navbar() {
         <li>
           <Link href="/" className="hover:text-sky-500 transition">Home</Link>
         </li>
-        <li>
+        {/* <li>
           <Link href="/photos" className="hover:text-sky-500 transition">Photos</Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
