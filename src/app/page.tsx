@@ -1,201 +1,167 @@
-// import Image from "next/image";
-import PfpFlip from "./components/pfpFlip";
+import Image from "next/image";
+import Link from "next/link";
+import ProfileFlip from "./components/pfpFlip";
+import ProjectVisual from "./components/ProjectVisual";
+import { projects } from "./data/projects";
+
+const experience = [
+  {
+    role: "AI Tutor",
+    company: "xAI",
+    period: "2024—2025",
+    detail: "Multimodal data annotation for language-model training and evaluation.",
+  },
+  {
+    role: "Software Engineer Intern",
+    company: "SPAN",
+    period: "2023",
+    detail: "Automated data pipelines with Prefect and made operational data legible in Datadog.",
+  },
+  {
+    role: "Software Engineer Intern",
+    company: "Trend Micro",
+    period: "2021",
+    detail: "Built a network-health monitor with ELK and Slack alerts.",
+  },
+];
+
 export default function Home() {
-  
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Zach Yeo",
+    url: "https://zachyeo.com",
+    image: "https://zachyeo.com/profile_photos/pfp4.jpg",
+    jobTitle: "Software Developer",
+    homeLocation: { "@type": "Place", name: "Tokyo, Japan" },
+    sameAs: [
+      "https://github.com/zyeo",
+      "https://www.linkedin.com/in/zacharyyeo",
+      "https://photos.zachyeo.com",
+    ],
+    knowsAbout: ["Web development", "Browser extensions", "Automation", "IoT"],
+  };
+
   return (
     <>
-      {/* Hero/Intro Section (default) */}
-      <section className="pt-10 pb-10 px-4 text-center flex flex-col items-center scale-[1.25]">
-        <PfpFlip className="my-8 scale-[1.05]" />
-        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 text-center mb-4">
-          Hey, I&#39;m <span className="text-sky-500">Zachary Yeo</span>
-        </h1>
-        <p className="text-xl text-gray-700 text-center max-w-xl mb-6 mx-auto">
-          Welcome to my portfolio! 👋
-        </p>
-        <div className="flex flex-wrap gap-4 justify-center text-gray-500 text-lg">
-          <span>Software Developer</span>
-          <span className="hidden sm:inline">|</span>
-          <span>Building web apps, tools, and automations</span>
-        </div>
-        
-      </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
 
-      {/* About Me Section (default) */}
-      <section className="pt-12 pb-16 px-4">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">About Me</h2>
-          <div className="max-w-3xl mx-auto text-left">
-            <p className="text-gray-700 text-lg leading-relaxed text-left mb-4">
-              I build web apps, tools, and automations that solve real problems. From frontend interfaces to backend systems, I focus on creating simple, practical products that people actually use.
+      <main>
+        <section className="hero shell" aria-labelledby="hero-heading">
+          <div className="hero-copy">
+            <p className="eyebrow">Software developer · Tokyo</p>
+            <h1 id="hero-heading">
+              I make small, useful software for everyday systems.
+            </h1>
+            <p className="hero-deck">
+              I’m Zach. I build focused tools for the things I care about—from
+              finding a climbing gym to understanding time spent online.
             </p>
-
-            <p className="text-gray-700 text-lg leading-relaxed text-left">
-              Recently, I've been working on data tracking tools, browser extensions, and small-scale automation systems.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Technical Skills Section (Technical Expertise, grouped) */}
-      <section className="py-20 px-4 bg-cyan-100">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-900">Technical Expertise</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white rounded-xl p-6 border-l-4 border-sky-500 shadow">
-              <h3 className="font-semibold text-lg mb-2">Backend Development</h3>
-              <p className="text-gray-700">Python, FastAPI, Node.js, C/C++, Java</p>
-            </div>
-            <div className="bg-white rounded-xl p-6 border-l-4 border-sky-500 shadow">
-              <h3 className="font-semibold text-lg mb-2">Frontend Development & UI/UX</h3>
-              <p className="text-gray-700">React, UI/UX Principles</p>
-            </div>
-            <div className="bg-white rounded-xl p-6 border-l-4 border-sky-500 shadow">
-              <h3 className="font-semibold text-lg mb-2">Cloud & Deployment</h3>
-              <p className="text-gray-700">AWS, Azure, Docker, Kubernetes, Linux</p>
-            </div>
-            <div className="bg-white rounded-xl p-6 border-l-4 border-sky-500 shadow">
-              <h3 className="font-semibold text-lg mb-2">Database Management</h3>
-              <p className="text-gray-700">PostgreSQL, SQL, Milvus</p>
-            </div>
-            <div className="bg-white rounded-xl p-6 border-l-4 border-sky-500 shadow">
-              <h3 className="font-semibold text-lg mb-2">DevOps & Workflow</h3>
-              <p className="text-gray-700">GitHub, CI/CD, Jenkins, Prefect</p>
-            </div>
-            <div className="bg-white rounded-xl p-6 border-l-4 border-sky-500 shadow">
-              <h3 className="font-semibold text-lg mb-2">Observability & Search</h3>
-              <p className="text-gray-700">Datadog, Kibana, Elasticsearch</p>
-            </div>
-            <div className="bg-white rounded-xl p-6 border-l-4 border-sky-500 shadow">
-              <h3 className="font-semibold text-lg mb-2">Project Management</h3>
-              <p className="text-gray-700">JIRA, Confluence, Agile/Scrum</p>
-            </div>
-            <div className="bg-white rounded-xl p-6 border-l-4 border-sky-500 shadow">
-              <h3 className="font-semibold text-lg mb-2">Other</h3>
-              <p className="text-gray-700">Machine Learning, NLP, System Architecture, Network Protocols</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Featured Projects Section (default) */}
-      <section className="py-20 px-4">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-900">Personal Projects</h2>
-          <div className="grid md:grid-cols-2 gap-10">
-            {/* Project 1 */}
-            <div className="p-8 flex flex-col bg-white rounded-xl shadow">
-              <h3 className="text-xl font-semibold mb-2 text-gray-900">Tokyo Climbing Gym Index</h3>
-              <p className="text-gray-600 mb-4">A minimalist database of bouldering gyms in Tokyo</p>
-              <a 
-                href="https://tokyoindex.zachyeo.com" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-auto inline-block px-5 py-2 bg-sky-400 text-white rounded-md font-medium hover:bg-sky-500 transition text-center"
-                >
-                  Visit site
-                </a>
-            </div>
-            {/* Project 2 */}
-            <div className="p-8 flex flex-col bg-white rounded-xl shadow">
-              <h3 className="text-xl font-semibold mb-2 text-gray-900">Youtube Time Tracker Chrome Extension</h3>
-              <p className="text-gray-600 mb-4">
-                A lightweight tool for tracking YouTube usage and habits
-              </p>
-              <a 
-                href="https://github.com/zyeo/youtube-tracker-extension" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-auto inline-block px-5 py-2 bg-sky-400 text-white rounded-md font-medium hover:bg-sky-500 transition text-center"
-                >
-                  Learn more
-                </a>
-            </div>
-            {/* Project 3 */}
-            <div className="p-8 flex flex-col bg-white rounded-xl shadow">
-              <h3 className="text-xl font-semibold mb-2 text-gray-900">Smart Kettle Controller</h3>
-              <p className="text-gray-600 mb-4">
-                A simple IoT system for maintaining the perfect brewing temperature
-              </p>
-              <a
-                href="https://github.com/zyeo/smart-kettle-controller"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-auto inline-block px-5 py-2 bg-sky-400 text-white rounded-md font-medium hover:bg-sky-500 transition text-center"
-              >
-                Learn more
+            <div className="hero-links" aria-label="Primary links">
+              <a href="#work">Selected work ↓</a>
+              <a href="https://github.com/zyeo" target="_blank" rel="noreferrer">
+                GitHub ↗
               </a>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* Job Experiences Section (default) */}
-      <section className="py-20 px-4 bg-cyan-100">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-900">Professional Experience</h2>
-          <div className="space-y-10">
-            <div className="p-6 bg-white rounded-xl border-l-4 border-sky-500 shadow text-left">
-              <h3 className="text-xl font-semibold text-gray-900">AI Tutor @ xAI</h3>
-              <span className="text-gray-500 text-sm">August 2024 - June 2025</span>
-              <p className="text-gray-700 mt-2">Labeled multimodal data to support LLM fine-tuning and evaluation.</p>
+          <div className="hero-portrait">
+            <ProfileFlip />
+            <p className="portrait-note">Click to meet Benji.</p>
+          </div>
+        </section>
+
+        <section className="work-section shell" id="work" aria-labelledby="work-heading">
+          <div className="section-heading">
+            <p className="eyebrow">01 / Selected work</p>
+            <h2 id="work-heading">Things I’ve made</h2>
+          </div>
+
+          <div className="project-list">
+            {projects.map((project, index) => (
+              <article className="project" key={project.slug}>
+                <div className="project-visual-wrap" aria-hidden="true">
+                  <ProjectVisual kind={project.visual} />
+                </div>
+                <div className="project-copy">
+                  <div className="project-meta">
+                    <span>0{index + 1}</span>
+                    <span>{project.year}</span>
+                  </div>
+                  <h3>{project.title}</h3>
+                  <p>{project.summary}</p>
+                  <ul className="project-tags" aria-label={`${project.title} technologies`}>
+                    {project.stack.map((item) => <li key={item}>{item}</li>)}
+                  </ul>
+                  <div className="project-links">
+                    <Link href={`/work/${project.slug}`}>Read the case study →</Link>
+                    <a href={project.primaryUrl} target="_blank" rel="noreferrer">
+                      {project.primaryLabel} ↗
+                    </a>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="outside-section" aria-labelledby="outside-heading">
+          <div className="outside-grid shell">
+            <div className="outside-image">
+              <Image
+                src="/dark-rock.webp"
+                alt="A lone climber silhouetted against a granite wall"
+                fill
+                sizes="(max-width: 800px) 100vw, 50vw"
+              />
             </div>
-            <div className="p-6 bg-white rounded-xl border-l-4 border-sky-500 shadow text-left">
-              <h3 className="text-xl font-semibold text-gray-900">Software Engineer Intern @ SPAN.io</h3>
-              <span className="text-gray-500 text-sm">May 2023 - July 2023</span>
-              <p className="text-gray-700 mt-2">Created automated data pipelines using Prefect flows and visualized data on Datadog dashboards. </p>
-            </div>
-            <div className="p-6 bg-white rounded-xl border-l-4 border-sky-500 shadow text-left">
-              <h3 className="text-xl font-semibold text-gray-900">Software Engineer Intern @ Trend Micro</h3>
-              <span className="text-gray-500 text-sm">June 2021 - August 2021</span>
-              <p className="text-gray-700 mt-2">Developed an automated network health monitorintg tool that alerts teams using ELK Stack and Slack API. </p>
+            <div className="outside-copy">
+              <p className="eyebrow">02 / Away from the keyboard</p>
+              <h2 id="outside-heading">I climb and make photographs.</h2>
+              <p>
+                Photography is where I slow down and pay attention. I keep a
+                separate journal of photographs from places I’ve lived and wandered.
+              </p>
+              <a className="text-link" href="https://photos.zachyeo.com" target="_blank" rel="noreferrer">
+                Visit my photography journal ↗
+              </a>
             </div>
           </div>
-        </div>
-  </section>
+        </section>
 
-      {/* Get in Touch Section (default) */}
-      <section className="pt-20 pb-5 px-4">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Get in Touch</h2>
-          <p className="text-gray-700 mb-8 text-lg">Interested in working together or just want to say hi? Reach out below!</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="mailto:zachary.yeo@email.com"
-              className="inline-block px-10 py-4 bg-amber-400 text-white rounded-md font-semibold hover:bg-amber-500 transition text-lg shadow"
-            >
-              Email
-            </a>
-            <a
-              href="https://www.linkedin.com/in/zacharyyeo"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-10 py-4 bg-amber-400 text-white rounded-md font-semibold hover:bg-amber-500 transition text-lg shadow"
-            >
-              LinkedIn
-            </a>
-            <a
-              href="https://github.com/zyeo"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-10 py-4 bg-amber-400 text-white rounded-md font-semibold hover:bg-amber-500 transition text-lg shadow"
-            >
-              GitHub
-            </a>
+        <section className="experience-section shell" id="experience" aria-labelledby="experience-heading">
+          <div className="section-heading">
+            <p className="eyebrow">03 / Experience</p>
+            <h2 id="experience-heading">Places I’ve worked</h2>
           </div>
-        </div>
-      </section>
+          <ol className="experience-list">
+            {experience.map((item) => (
+              <li key={`${item.company}-${item.period}`}>
+                <p className="experience-period">{item.period}</p>
+                <div>
+                  <h3>{item.role}</h3>
+                  <p className="experience-company">{item.company}</p>
+                </div>
+                <p className="experience-detail">{item.detail}</p>
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        <section className="contact-section shell" id="contact" aria-labelledby="contact-heading">
+          <p className="eyebrow">04 / Say hello</p>
+          <h2 id="contact-heading">Have a thoughtful project in mind?</h2>
+          <p>I’m always happy to talk about useful software, climbing, or a good cup of tea.</p>
+          <div className="contact-links">
+            <a href="https://www.linkedin.com/in/zacharyyeo" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a href="https://github.com/zyeo" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a href="https://photos.zachyeo.com" target="_blank" rel="noreferrer">Photography ↗</a>
+          </div>
+        </section>
+      </main>
     </>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
