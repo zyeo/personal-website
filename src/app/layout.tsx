@@ -22,7 +22,7 @@ const newsreader = Newsreader({
 export const metadata: Metadata = {
   metadataBase: new URL("https://zachyeo.com"),
   title: {
-    default: "Zach Yeo — Software developer in Tokyo",
+    default: "Zach Yeo",
     template: "%s — Zach Yeo",
   },
   description: "Software developer building focused web tools, browser extensions, automations, and small connected systems.",
