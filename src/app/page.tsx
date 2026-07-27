@@ -8,7 +8,7 @@ const experience = [
   {
     role: "Software Engineer",
     company: "Recho",
-    period: "Present",
+    period: "2026—Present",
     detail: "Building voice-AI products for enterprise customer operations.",
   },
   {
@@ -128,8 +128,8 @@ export default function Home() {
               <p className="eyebrow">02 / Away from the keyboard</p>
               <h2 id="outside-heading">I climb and make photographs.</h2>
               <p>
-                When I’m not working, I’m often walking around with a camera,
-                photographing whatever catches my eye. Here I keep a daily photo
+                When I’m not working, you can find me walking around with a camera,
+                photographing whatever catches my eye. Here, I keep a daily photo
                 journal of the places I’ve explored.
               </p>
               <a className="text-link" href="https://photos.zachyeo.com" target="_blank" rel="noreferrer">
@@ -161,7 +161,7 @@ export default function Home() {
         <section className="contact-section shell" id="contact" aria-labelledby="contact-heading">
           <p className="eyebrow">04 / Say hello</p>
           <h2 id="contact-heading">Have a thoughtful project in mind?</h2>
-          <p>I’m always happy to talk about useful software, climbing, or a good cup of coffee.</p>
+          <p>I’m always happy to talk about any cool software ideas, climbing, or brewing a good cup of coffee.</p>
           <div className="contact-links">
             <a href="https://www.linkedin.com/in/zacharyyeo" target="_blank" rel="noreferrer">LinkedIn ↗</a>
             <a href="https://github.com/zyeo" target="_blank" rel="noreferrer">GitHub ↗</a>
