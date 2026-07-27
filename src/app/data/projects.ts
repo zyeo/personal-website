@@ -43,7 +43,7 @@ export const projects: Project[] = [
     title: "YouTube Time Tracker",
     eyebrow: "Browser extension · Local-first",
     year: "2026",
-    summary: "A Chrome extension that measures focused YouTube time by page type—without sending browsing data off-device.",
+    summary: "A Chrome extension that measures time wasted doomscrolling on YouTube.",
     intro: "Most screen-time totals lack context. A tutorial, a long video, and thirty minutes of scrolling are not the same thing. This extension measures focused activity and makes the differences visible.",
     visual: "tracker",
     stack: ["Chrome APIs", "JavaScript", "Local storage", "Node tests"],

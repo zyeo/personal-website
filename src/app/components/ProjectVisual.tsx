@@ -4,18 +4,35 @@ export default function ProjectVisual({ kind }: { kind: Project["visual"] }) {
   if (kind === "index") {
     return (
       <div className="project-preview index-preview">
-        <div className="preview-bar"><span>TOKYO / CLIMB</span><span>35.6762° N</span></div>
-        <div className="index-map">
-          <span className="map-line line-one" />
-          <span className="map-line line-two" />
-          <span className="map-line line-three" />
-          <span className="map-pin pin-one">01</span>
-          <span className="map-pin pin-two">02</span>
-          <span className="map-pin pin-three">03</span>
-          <div className="index-panel">
-            <p>GYM INDEX</p>
-            <strong>Find your wall.</strong>
-            <span>Board training · Open now</span>
+        <div className="index-site">
+          <h4>Tokyo Climbing Gym Index</h4>
+          <p>A minimalist database for climbers training hard in Tokyo.</p>
+          <div className="index-filters">
+            <strong>Filters</strong>
+            <span>Hangboard</span>
+            <span>Campus Board</span>
+            <span>Spray Wall</span>
+            <small>Clear</small>
+          </div>
+          <div className="index-table" role="presentation">
+            <div className="index-row index-head">
+              <span>Name</span><span>Style</span><span>Size</span><span>Cost</span><span>Quality</span>
+            </div>
+            <div className="index-row">
+              <span>BPUMP Akihabara</span><span>Normal, Competition</span><span>big</span><span>$$$</span><span>****</span>
+            </div>
+            <div className="index-row">
+              <span>BPUMP Ogikubo</span><span>Competition Style</span><span>small</span><span>$$$</span><span>****</span>
+            </div>
+            <div className="index-row">
+              <span>Underground</span><span>Oldschool Style</span><span>very small</span><span>$$</span><span>*****</span>
+            </div>
+            <div className="index-row">
+              <span>Maboo</span><span>Competition Style</span><span>small</span><span>$$</span><span>*****</span>
+            </div>
+            <div className="index-row">
+              <span>Next Gen</span><span>Competition Style</span><span>big</span><span>$$$</span><span>*****</span>
+            </div>
           </div>
         </div>
       </div>
